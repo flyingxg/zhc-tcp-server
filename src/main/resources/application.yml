@@ -1,0 +1,22 @@
+netty:
+  tcp-port: 8086
+  boss-count: 1
+  worker-count: 10
+  keep-alive: true
+  backlog: 100
+
+
+spring:
+  rabbitmq:
+    host:
+    port: 5672
+    username:
+    password:
+    listener.simple:
+      prefetch: 50
+      concurrency: 10
+      max-concurrency: 20
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+server:
+  port: 8087
